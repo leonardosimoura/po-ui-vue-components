@@ -1,0 +1,28 @@
+<template>
+  <div class="po-loading-icon" :class="{ 'po-loading-icon-neutral-color' : neutralColor}">
+    <span class="po-loading-icon-bar po-loading-icon-bar-1"></span>
+    <span class="po-loading-icon-bar po-loading-icon-bar-2"></span>
+    <span class="po-loading-icon-bar po-loading-icon-bar-3"></span>
+    <span class="po-loading-icon-bar po-loading-icon-bar-4"></span>
+    <span class="po-loading-icon-bar po-loading-icon-bar-5"></span>
+    <span class="po-loading-icon-bar po-loading-icon-bar-6"></span>
+    <span class="po-loading-icon-bar po-loading-icon-bar-7"></span>
+    <span class="po-loading-icon-bar po-loading-icon-bar-8"></span>
+  </div>
+</template>
+
+<script lang="ts">
+import { Options, Vue } from "vue-class-component";
+
+@Options({
+  props: {
+    neutralColor: Boolean
+  }
+})
+export default class PoLoadingIcon extends Vue {
+  neutralColor!: boolean;
+}
+</script>
+
+<style scoped>
+</style>
