@@ -1,3 +1,3 @@
-import PoBreadcrumb from './PoBreadcrumb.vue'
+import PoBreadcrumb from "./PoBreadcrumb.vue";
 
-export default PoBreadcrumb
+export default PoBreadcrumb;

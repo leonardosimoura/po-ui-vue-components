@@ -1,13 +1,15 @@
 <template>
   <li
-    :class="{'po-breadcrumb-item': !itemActive && (link || action) ,
-    'po-breadcrumb-item-unclickable': !itemActive && (!link && !action),
-    'po-breadcrumb-item-unclickable': itemActive }"
+    :class="{
+      'po-breadcrumb-item': !itemActive && (link || action),
+      'po-breadcrumb-item-unclickable': !itemActive && !link && !action,
+      'po-breadcrumb-item-unclickable': itemActive
+    }"
   >
     <label v-if="itemActive" class="po-breadcrumb-label">{{ label }}</label>
 
     <!-- <a v-if="!itemActive &&  link" [routerLink]="link"> -->
-    <a v-if="!itemActive &&  link" v-bind:href="link">
+    <a v-if="!itemActive && link" v-bind:href="link">
       <label class="po-breadcrumb-label">{{ label }}</label>
       <div class="po-breadcrumb-arrow"></div>
     </a>
@@ -43,5 +45,4 @@ export default class PoBreadcrumbItem extends Vue {
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

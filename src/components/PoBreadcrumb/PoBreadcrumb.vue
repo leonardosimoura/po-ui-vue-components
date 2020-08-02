@@ -143,8 +143,6 @@ export default class PoBreadcrumb extends Vue {
     const breadcrumbFavorite = this.getBreadcrumbFavoriteWidth();
     const breadcrumb = this.getBreadcrumbWidth(breadcrumbFavorite);
     this.calcBreadcrumbItemsWidth();
-    console.log(breadcrumb, "breadcrumb");
-    console.log(this._breadcrumbItemsLenght, "this._breadcrumbItemsLenght");
     if (breadcrumb <= this._breadcrumbItemsLenght) {
       this.enableBreadcrumbResponsive();
     } else {
@@ -233,5 +231,4 @@ export default class PoBreadcrumb extends Vue {
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

@@ -1,3 +1,3 @@
-import PoButton from './PoButton.vue'
+import PoButton from "./PoButton.vue";
 
-export default PoButton
+export default PoButton;

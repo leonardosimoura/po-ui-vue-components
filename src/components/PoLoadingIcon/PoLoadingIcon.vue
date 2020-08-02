@@ -1,5 +1,8 @@
 <template>
-  <div class="po-loading-icon" :class="{ 'po-loading-icon-neutral-color' : neutralColor}">
+  <div
+    class="po-loading-icon"
+    :class="{ 'po-loading-icon-neutral-color': neutralColor }"
+  >
     <span class="po-loading-icon-bar po-loading-icon-bar-1"></span>
     <span class="po-loading-icon-bar po-loading-icon-bar-2"></span>
     <span class="po-loading-icon-bar po-loading-icon-bar-3"></span>
@@ -24,5 +27,4 @@ export default class PoLoadingIcon extends Vue {
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
