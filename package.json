@@ -13,12 +13,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@po-ui/style": "^2.10.0",
     "core-js": "^3.6.5",
     "vue": "^3.0.0-0",
     "vue-class-component": "^8.0.0-0"
   },
   "devDependencies": {
+    "@po-ui/style": "^2.10.0",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.5.0",

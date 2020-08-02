@@ -20,6 +20,7 @@
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
+import PoLoadingIcon from "../PoLoadingIcon";
 
 @Options({
   props: {
@@ -29,7 +30,8 @@ import { Options, Vue } from "vue-class-component";
     small: Boolean,
     type: String
   },
-  emits: ["click"]
+  emits: ["click"],
+  components: { PoLoadingIcon }
 })
 export default class PoButton extends Vue {
   label!: string;

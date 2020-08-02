@@ -1,5 +1,5 @@
 import Vue from "vue";
-import { PoButton, PoLoadingIcon } from "./src/components";
+import { PoButton, PoLoadingIcon, PoBreadcrumb } from "./src/components";
 
 const components = {
     PoButton,
