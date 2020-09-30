@@ -1,35 +1,33 @@
 <template>
-  <div class="po-wrapper">
-    <PoMenu
-      :menus="[{ label: 'PO UI - Angular Framework', link: '/' },{ label: 'PO UI - Angular Framework', link: '/' },{ label: 'PO UI - Angular Framework', link: '/' }]"
-      :logo="'https://po-ui.io//assets/graphics/po.png'"
-      :shortLogo="'https://po-ui.io//assets/graphics/po.png'"
-    ></PoMenu>
-    <!-- <po-toolbar
-      [p-actions]="actions"
-      p-actions-icon="po-icon po-icon-grid"
-      [p-profile]="profile"
-      [p-profile-actions]="profileActions"
-      [p-notification-actions]="notificationActions"
-      [p-notification-number]="notificationNumber"
-      [p-show-notification]="showNotification"
-      [p-title]="title"
-    ></po-toolbar>-->
-  </div>
+  <PoButton :label="'teste'" :onClick="poButtonClick"> </PoButton>
+  <PoButton :label="'teste'" :loading="'true'" :onClick="poButtonClick">
+  </PoButton>
 </template>
 
-<script>
-import { PoButton, PoBreadcrumb, PoMenu } from "./components/index";
-
-export default {
+<script lang="ts">
+import { defineComponent } from "vue";
+import { PoButton } from "./components";
+export default defineComponent({
   name: "App",
   components: {
-    PoMenu
+    PoButton
   },
-  methods: {
-    clickBotao() {
-      console.log("clickBotao");
-    }
+  setup: () => {
+    const poButtonClick = () => {
+      alert("poButtonClick");
+    };
+    return { poButtonClick };
   }
-};
+});
 </script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
