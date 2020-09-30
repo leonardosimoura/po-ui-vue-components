@@ -1,5 +1,5 @@
 import Vue from "vue";
-import { PoButton, PoLoadingIcon } from "./src/components";
+import { PoButton, PoLoadingIcon } from "./components"
 
 const components = {
     PoButton,
@@ -8,7 +8,7 @@ const components = {
 
 export const poUIPlugin = {
     install: (vue: Vue.App, options: any) => {
-        vue.component('PoButton', PoButton);// ver se realmente precisa disso
+        vue.component('PoButton', PoButton);
         vue.component('PoLoadingIcon', PoLoadingIcon);
     }
 };

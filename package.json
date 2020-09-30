@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-lib": "vue-cli-service build --target lib --inline-vue --name pouivue ./index.ts",
+    "build-lib": "vue-cli-service build --target lib --inline-vue --name po-ui-vue-components ./src/index.ts && cp package.json ./dist/package.json",
     "release": "npm publish --access public --force",
     "unrelease": "npm unpublish @leonardosimoura/po-ui-vue-components@0.0.1 --force",
     "lint": "vue-cli-service lint"
